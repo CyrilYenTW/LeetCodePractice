@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://webservice.hand.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="HandServiceImplService" targetNamespace="http://webservice.hand.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="HandServiceImplPortBinding_MTOM_Policy">
+    <ns1:OptimizedMimeSerialization xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true">
+    </ns1:OptimizedMimeSerialization>
+  </wsp:Policy>
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://ks-agiletest01.biz.local:9080/BIZLink/service/handService?xsd=1" namespace="http://webservice.hand.com/" />
+    </xsd:schema>
+  </types>
+  <message name="createPRWF">
+    <part name="parameters" element="tns:createPRWF" />
+  </message>
+  <message name="createPRWFResponse">
+    <part name="parameters" element="tns:createPRWFResponse" />
+  </message>
+  <message name="getFileNameDefault">
+    <part name="parameters" element="tns:getFileNameDefault" />
+  </message>
+  <message name="getFileNameDefaultResponse">
+    <part name="parameters" element="tns:getFileNameDefaultResponse" />
+  </message>
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
+  </message>
+  <message name="createPOWF">
+    <part name="parameters" element="tns:createPOWF" />
+  </message>
+  <message name="createPOWFResponse">
+    <part name="parameters" element="tns:createPOWFResponse" />
+  </message>
+  <message name="getFileDefault">
+    <part name="parameters" element="tns:getFileDefault" />
+  </message>
+  <message name="getFileDefaultResponse">
+    <part name="parameters" element="tns:getFileDefaultResponse" />
+  </message>
+  <message name="getFileByRev">
+    <part name="parameters" element="tns:getFileByRev" />
+  </message>
+  <message name="getFileByRevResponse">
+    <part name="parameters" element="tns:getFileByRevResponse" />
+  </message>
+  <message name="getFileNameByRev">
+    <part name="parameters" element="tns:getFileNameByRev" />
+  </message>
+  <message name="getFileNameByRevResponse">
+    <part name="parameters" element="tns:getFileNameByRevResponse" />
+  </message>
+  <portType name="HandService">
+    <operation name="createPRWF">
+      <input wsam:Action="http://webservice.hand.com/HandService/createPRWFRequest" message="tns:createPRWF" />
+      <output wsam:Action="http://webservice.hand.com/HandService/createPRWFResponse" message="tns:createPRWFResponse" />
+    </operation>
+    <operation name="getFileNameDefault">
+      <input wsam:Action="http://webservice.hand.com/HandService/getFileNameDefaultRequest" message="tns:getFileNameDefault" />
+      <output wsam:Action="http://webservice.hand.com/HandService/getFileNameDefaultResponse" message="tns:getFileNameDefaultResponse" />
+      <fault wsam:Action="http://webservice.hand.com/HandService/getFileNameDefault/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="createPOWF">
+      <input wsam:Action="http://webservice.hand.com/HandService/createPOWFRequest" message="tns:createPOWF" />
+      <output wsam:Action="http://webservice.hand.com/HandService/createPOWFResponse" message="tns:createPOWFResponse" />
+    </operation>
+    <operation name="getFileDefault">
+      <input wsam:Action="http://webservice.hand.com/HandService/getFileDefaultRequest" message="tns:getFileDefault" />
+      <output wsam:Action="http://webservice.hand.com/HandService/getFileDefaultResponse" message="tns:getFileDefaultResponse" />
+      <fault wsam:Action="http://webservice.hand.com/HandService/getFileDefault/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getFileByRev">
+      <input wsam:Action="http://webservice.hand.com/HandService/getFileByRevRequest" message="tns:getFileByRev" />
+      <output wsam:Action="http://webservice.hand.com/HandService/getFileByRevResponse" message="tns:getFileByRevResponse" />
+      <fault wsam:Action="http://webservice.hand.com/HandService/getFileByRev/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+    <operation name="getFileNameByRev">
+      <input wsam:Action="http://webservice.hand.com/HandService/getFileNameByRevRequest" message="tns:getFileNameByRev" />
+      <output wsam:Action="http://webservice.hand.com/HandService/getFileNameByRevResponse" message="tns:getFileNameByRevResponse" />
+      <fault wsam:Action="http://webservice.hand.com/HandService/getFileNameByRev/Fault/IOException" name="IOException" message="tns:IOException" />
+    </operation>
+  </portType>
+  <binding name="HandServiceImplPortBinding" type="tns:HandService">
+    <wsp:PolicyReference URI="#HandServiceImplPortBinding_MTOM_Policy">
+    </wsp:PolicyReference>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="createPRWF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getFileNameDefault">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createPOWF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getFileDefault">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getFileByRev">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getFileNameByRev">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="HandServiceImplService">
+    <port name="HandServiceImplPort" binding="tns:HandServiceImplPortBinding">
+      <soap:address location="http://ks-agiletest01.biz.local:9080/BIZLink/service/handService" />
+    </port>
+  </service>
+</definitions>
