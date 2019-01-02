@@ -1,7 +1,7 @@
 E:\Cyril\Test\TestSomeThing\TestSomeThing\bin\Debug\TestSomeThing.exe
 E:\Cyril\Test\TestSomeThing\TestSomeThing\bin\Debug\TestSomeThing.pdb
-E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.csprojAssemblyReference.cache
 E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.csproj.CoreCompileInputs.cache
 E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.exe
 E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.pdb
 E:\Cyril\Test\TestSomeThing\TestSomeThing\bin\Debug\TestSomeThing.exe.config
+E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.csprojAssemblyReference.cache

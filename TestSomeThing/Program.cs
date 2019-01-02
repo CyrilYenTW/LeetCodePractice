@@ -11,7 +11,7 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            new UnitTest();
+            new Largest_Number();
         }
 
         static void Test()

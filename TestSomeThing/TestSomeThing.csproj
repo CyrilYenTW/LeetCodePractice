@@ -52,6 +52,7 @@
     <Compile Include="Hamming Distance.cs" />
     <Compile Include="Jewels and Stones.cs" />
     <Compile Include="Lambda Test.cs" />
+    <Compile Include="Largest Number.cs" />
     <Compile Include="Longest Palindromic Substring.cs" />
     <Compile Include="Longest Substring Without Repeating Characters.cs" />
     <Compile Include="Max Increase to Keep City Skyline.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="SoapRequest.cs" />
     <Compile Include="Solution.cs" />
     <Compile Include="Sort Array By Parity.cs" />
+    <Compile Include="Unique Email Addresses.cs" />
     <Compile Include="Unique Morse Code Words.cs" />
     <Compile Include="UnitTest.cs" />
     <Compile Include="Web References\AgileSoap\Reference.cs">
