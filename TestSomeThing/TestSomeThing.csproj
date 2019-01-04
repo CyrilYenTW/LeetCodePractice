@@ -48,6 +48,7 @@
     <Compile Include="AddTwoNumber.cs" />
     <Compile Include="Delagete Test.cs" />
     <Compile Include="Delete Columns to Make Sorted.cs" />
+    <Compile Include="Design Linked List.cs" />
     <Compile Include="Encode and Decode TinyURL.cs" />
     <Compile Include="Func Test.cs" />
     <Compile Include="Hamming Distance.cs" />

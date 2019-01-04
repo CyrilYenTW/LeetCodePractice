@@ -11,7 +11,7 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            new Univalued_Binary_Tree();
+            new Design_Linked_List();
         }
 
         static void Test()
