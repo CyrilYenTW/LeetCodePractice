@@ -72,6 +72,7 @@
     <Compile Include="Unique Email Addresses.cs" />
     <Compile Include="Unique Morse Code Words.cs" />
     <Compile Include="UnitTest.cs" />
+    <Compile Include="Univalued Binary Tree.cs" />
     <Compile Include="Web References\AgileSoap\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

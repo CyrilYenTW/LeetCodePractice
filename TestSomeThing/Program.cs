@@ -11,7 +11,7 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            new Delete_Columns_to_Make_Sorted();
+            new Univalued_Binary_Tree();
         }
 
         static void Test()
