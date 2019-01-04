@@ -9,11 +9,9 @@ namespace TestSomeThing
     {
         public UnitTest()
         {
-            var input = new int[] { 74, 21, 33, 51, 77, 51, 90, 60, 5, 56 };
+            var a = new Dictionary<string, string>();
 
-            var list = input.ToList();
-
-            list.Sort();
+            var b = a == null;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            new Largest_Number();
+            new Delete_Columns_to_Make_Sorted();
         }
 
         static void Test()
