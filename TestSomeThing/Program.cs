@@ -11,7 +11,7 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            new Design_Linked_List();
+            new DI_String_Match();
         }
 
         static void Test()
