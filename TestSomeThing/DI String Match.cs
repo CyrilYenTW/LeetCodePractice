@@ -16,18 +16,19 @@ namespace TestSomeThing
 
         public int[] DiStringMatch(string S)
         {
+            var sLength = S.Length;
             var head = 0;
-            var tail = S.Length;
-            var result = new int[S.Length + 1];
+            var tail = sLength;
+            var result = new int[sLength + 1];
 
-            for (int i = 0; i < S.Length; i++)
+            for (int i = 0; i < sLength; i++)
             {
                 var current = S[i];
 
                 result[i] = current == 'I' ? head++ : tail--;
             }
 
-            result[S.Length] = tail;
+            result[sLength] = tail;
 
             return result;
         }

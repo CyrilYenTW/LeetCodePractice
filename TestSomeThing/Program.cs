@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace TestSomeThing
 {
@@ -11,102 +12,42 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            new DI_String_Match();
+            //var a = GetResult(10000);
+
+            var a = "　aaxxvv ";
+            var b = a.Trim();
         }
 
-        static void Test()
+        public static string GetResult(decimal n)
         {
-            var originString = "00000000";
-
-            var nextString = string.Empty;
-
-            var watch = System.Diagnostics.Stopwatch.StartNew();
-
-            for (int i = 0; i < 9999999; i++)
+            var result = "1";
+            
+            for (int count = 0; count < n; count++)
             {
-                originString = GetNextValue(originString);
-            }
+                var temp = result;
+                var isCarry = false;
+                result = string.Empty;
 
-            watch.Stop();
-
-            var getTime = watch.ElapsedMilliseconds;
-
-            watch.Reset();
-            watch.Start();
-
-            originString = "00000000";
-
-            for (int i = 0; i < 9999999; i++)
-            {
-                originString = GetNextValue2(originString);
-            }
-
-            watch.Stop();
-
-            getTime = watch.ElapsedMilliseconds;
-        }
-
-
-        static string GetNextValue2(string noValue)
-        {
-            var digits = noValue.Length;
-            var zeroString = string.Empty;
-
-            for (int i = 0; i < digits; i++)
-            {
-                zeroString += "0";
-            }
-
-            var temp = Convert.ToUInt32(noValue);
-
-            return temp++.ToString(zeroString);
-        }
-
-        static string GetNextValue(string nowValue)
-        {
-            var digit_36_entities = new char[36] { '0', '1', '2', '3', '4', '5', '6', '7', '8',
-                                                   '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
-                                                   'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
-                                                   'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-
-            var digit_34_entities = new char[34] { '0', '1', '2', '3', '4', '5', '6', '7', '8',
-                                                   '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
-                                                   'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S',
-                                                   'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-
-            var digit_10_entities = new char[10] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-
-
-            var nowValueArrary = nowValue.ToArray();
-
-            char[] digitEntity = digit_10_entities;
-
-            // 最後一位數
-            var lastCharIndex = nowValueArrary.Length - 1;
-
-            var addTag = true;
-
-            while (addTag == true && lastCharIndex > -1)
-            {
-                var lastChar = nowValueArrary[lastCharIndex];
-
-                var lastCharDigitEntityIndex = Array.FindIndex(digitEntity, m => m == lastChar);
-
-                if (lastCharDigitEntityIndex == digitEntity.Length - 1)
+                for (var index = 0; index < temp.Length; index++)
                 {
-                    nowValueArrary[lastCharIndex] = digitEntity[0];
-                    lastCharIndex--;
+                    var digit = Convert.ToInt32(temp[index].ToString()) * 2;
+
+                    digit = isCarry ? digit + 1 : digit;
+
+                    isCarry = digit > 9 ? true : false;
+
+                    result += (digit % 10).ToString();
                 }
-                else
-                {
-                    nowValueArrary[lastCharIndex] = digitEntity[lastCharDigitEntityIndex + 1];
-                    addTag = false;
-                }
+
+                result = isCarry ? result += "1" : result;
+
             }
 
-            var result = new string(nowValueArrary);
+            var resultArray = result.ToCharArray();
 
-            return result;
+            Array.Reverse(resultArray);
+
+            return new string(resultArray);
         }
     }
 }
