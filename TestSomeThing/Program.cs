@@ -8,57 +8,28 @@ namespace TestSomeThing
 {
     class Program
     {
-        static int Result = 0;
-
         static void Main(string[] args)
         {
+            var testCount = 1000;
+            var rightCount = 0;
 
-        }
-
-        public int Test(int a)
-        {
-            if (a > 0)
+            for (int i = 0; i < testCount; i++)
             {
-                if (a >= 100)
+                var temp = new ThreeDoorChange();
+
+                temp.FirstChoosing();
+
+                if (temp.Change())
                 {
-                    if ( a >= 1000)
-                    {
-                        return 1000;
-                    }
-                    else
-                    {
-                        return 100;
-                    }
-                }
-                else
-                {
-                    return a;
+                    rightCount++;
                 }
             }
-            else
-            {
-                return 0;
-            }
-        }
 
-        public int Test2(int a)
-        {
-            if (a >= 1000)
-            {
-                return 1000;
-            }
+            var result = (double)(rightCount*100) / testCount;
 
-            if (a >= 100)
-            {
-                return 100;
-            }
+            Console.WriteLine(string.Format("{0}%", result.ToString()));
 
-            if (a <= 0)
-            {
-                return 0;
-            }
-
-            return a;
+            Console.ReadLine();
         }
     }
 }

@@ -71,6 +71,7 @@
     <Compile Include="Robot Return to Origin.cs" />
     <Compile Include="Solution.cs" />
     <Compile Include="Sort Array By Parity.cs" />
+    <Compile Include="ThreeDoorChange.cs" />
     <Compile Include="Unique Email Addresses.cs" />
     <Compile Include="Unique Morse Code Words.cs" />
     <Compile Include="UnitTest.cs" />
