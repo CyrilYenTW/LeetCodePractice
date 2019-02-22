@@ -33,3 +33,30 @@ def PrintTree(tree: 'TreeNode'):
 		arr.append(temp[1])
 
 	print(arr)
+
+def SortTree2(tree: 'TreeNode', key: 'string', dic: 'dict'):
+	dic[key] = tree.val if tree else 'null'
+
+	if tree == None:
+		return
+
+	SortTree2(tree.left, key+'L', dic)
+	SortTree2(tree.right, key+'R', dic)
+
+	return dic
+
+
+def PrintTree2(tree: 'TreeNode'):
+	result = SortTree2(tree, '', {})
+
+	if result == []:
+		print(result)
+		return
+
+	result = sorted(result.items(), key=lambda m: len(m[0]))
+	arr = []
+
+	for temp in result:
+		arr.append(temp[1])
+
+	print(arr)

@@ -12,42 +12,53 @@ namespace TestSomeThing
 
         static void Main(string[] args)
         {
-            //var a = GetResult(10000);
 
-            var a = "　aaxxvv ";
-            var b = a.Trim();
         }
 
-        public static string GetResult(decimal n)
+        public int Test(int a)
         {
-            var result = "1";
-            
-            for (int count = 0; count < n; count++)
+            if (a > 0)
             {
-                var temp = result;
-                var isCarry = false;
-                result = string.Empty;
-
-                for (var index = 0; index < temp.Length; index++)
+                if (a >= 100)
                 {
-                    var digit = Convert.ToInt32(temp[index].ToString()) * 2;
-
-                    digit = isCarry ? digit + 1 : digit;
-
-                    isCarry = digit > 9 ? true : false;
-
-                    result += (digit % 10).ToString();
+                    if ( a >= 1000)
+                    {
+                        return 1000;
+                    }
+                    else
+                    {
+                        return 100;
+                    }
                 }
+                else
+                {
+                    return a;
+                }
+            }
+            else
+            {
+                return 0;
+            }
+        }
 
-                result = isCarry ? result += "1" : result;
-
+        public int Test2(int a)
+        {
+            if (a >= 1000)
+            {
+                return 1000;
             }
 
-            var resultArray = result.ToCharArray();
+            if (a >= 100)
+            {
+                return 100;
+            }
 
-            Array.Reverse(resultArray);
+            if (a <= 0)
+            {
+                return 0;
+            }
 
-            return new string(resultArray);
+            return a;
         }
     }
 }

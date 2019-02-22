@@ -22,15 +22,5 @@ namespace TestSomeThing.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://ks-agiletest01.biz.local:9080/BIZLink/service/handService")]
-        public string TestSomeThing_AgileSoap_HandServiceImplService {
-            get {
-                return ((string)(this["TestSomeThing_AgileSoap_HandServiceImplService"]));
-            }
-        }
     }
 }
