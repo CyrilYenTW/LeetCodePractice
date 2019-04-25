@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Action Test.cs" />
     <Compile Include="AddTwoNumber.cs" />
+    <Compile Include="Count and Say.cs" />
     <Compile Include="Delagete Test.cs" />
     <Compile Include="Delete Columns to Make Sorted.cs" />
     <Compile Include="Design Linked List.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="Encode and Decode TinyURL.cs" />
     <Compile Include="Func Test.cs" />
     <Compile Include="Hamming Distance.cs" />
+    <Compile Include="Implement strStr.cs" />
     <Compile Include="Jewels and Stones.cs" />
     <Compile Include="Lambda Test.cs" />
     <Compile Include="Largest Number.cs" />
@@ -60,7 +62,9 @@
     <Compile Include="Longest Palindromic Substring.cs" />
     <Compile Include="Longest Substring Without Repeating Characters.cs" />
     <Compile Include="Max Increase to Keep City Skyline.cs" />
+    <Compile Include="Maximum Subarray.cs" />
     <Compile Include="Median of Two Sorted Arrays.cs" />
+    <Compile Include="Merge Two Sorted Lists.cs" />
     <Compile Include="Minimum Add to Make Parentheses Valid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,7 +73,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Remove Duplicates from Sorted Array.cs" />
     <Compile Include="Robot Return to Origin.cs" />
+    <Compile Include="Search Insert Position.cs" />
     <Compile Include="Solution.cs" />
     <Compile Include="Sort Array By Parity.cs" />
     <Compile Include="ThreeDoorChange.cs" />

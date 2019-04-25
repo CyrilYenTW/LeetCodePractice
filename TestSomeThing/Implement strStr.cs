@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 
 namespace TestSomeThing
 {
-    class Program
+    public class Implement_strStr
     {
-        static void Main(string[] args)
+        public int StrStr(string haystack, string needle)
         {
-            new Maximum_Subarray();
+            return haystack.IndexOf(needle);
         }
     }
 }
