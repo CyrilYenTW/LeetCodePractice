@@ -5,3 +5,10 @@ E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.exe
 E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.pdb
 E:\Cyril\Test\TestSomeThing\TestSomeThing\bin\Debug\TestSomeThing.exe.config
 E:\Cyril\Test\TestSomeThing\TestSomeThing\obj\Debug\TestSomeThing.csprojAssemblyReference.cache
+F:\SourceCodes\LeetCodePractice\TestSomeThing\bin\Debug\TestSomeThing.exe.config
+F:\SourceCodes\LeetCodePractice\TestSomeThing\bin\Debug\TestSomeThing.exe
+F:\SourceCodes\LeetCodePractice\TestSomeThing\bin\Debug\TestSomeThing.pdb
+F:\SourceCodes\LeetCodePractice\TestSomeThing\obj\Debug\TestSomeThing.csprojAssemblyReference.cache
+F:\SourceCodes\LeetCodePractice\TestSomeThing\obj\Debug\TestSomeThing.csproj.CoreCompileInputs.cache
+F:\SourceCodes\LeetCodePractice\TestSomeThing\obj\Debug\TestSomeThing.exe
+F:\SourceCodes\LeetCodePractice\TestSomeThing\obj\Debug\TestSomeThing.pdb
