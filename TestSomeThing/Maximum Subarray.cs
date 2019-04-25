@@ -51,9 +51,5 @@ namespace TestSomeThing
 
             return max;
         }
-
-        public int MaxSubArray(int[] nums)
-        {
-
-        }
+    }
 }
