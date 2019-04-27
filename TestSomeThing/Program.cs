@@ -10,7 +10,7 @@ namespace TestSomeThing
     {
         static void Main(string[] args)
         {
-            new Maximum_Subarray();
+            new Wildcard_Matching();
         }
     }
 }
