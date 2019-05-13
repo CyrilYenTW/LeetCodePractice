@@ -10,7 +10,7 @@ namespace TestSomeThing
     {
         static void Main(string[] args)
         {
-            new UnitTest();
+            new Maximum_Depth_of_N_ary_Tree.Solution();
 
 
         }

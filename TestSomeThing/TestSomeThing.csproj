@@ -54,6 +54,7 @@
     <Compile Include="Design Linked List.cs" />
     <Compile Include="DI String Match.cs" />
     <Compile Include="Encode and Decode TinyURL.cs" />
+    <Compile Include="Find Common Characters.cs" />
     <Compile Include="Func Test.cs" />
     <Compile Include="Hamming Distance.cs" />
     <Compile Include="Implement strStr.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Longest Palindromic Substring.cs" />
     <Compile Include="Longest Substring Without Repeating Characters.cs" />
     <Compile Include="Max Increase to Keep City Skyline.cs" />
+    <Compile Include="Maximum Depth of N-ary Tree.cs" />
     <Compile Include="Maximum Subarray.cs" />
     <Compile Include="Median of Two Sorted Arrays.cs" />
     <Compile Include="Merge Two Sorted Lists.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Solution.cs" />
     <Compile Include="Sort Array By Parity.cs" />
     <Compile Include="ThreeDoorChange.cs" />
+    <Compile Include="Unique Binary Search Trees II.cs" />
     <Compile Include="Unique Email Addresses.cs" />
     <Compile Include="Unique Morse Code Words.cs" />
     <Compile Include="UnitTest.cs" />
