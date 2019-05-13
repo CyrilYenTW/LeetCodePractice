@@ -10,7 +10,9 @@ namespace TestSomeThing
     {
         static void Main(string[] args)
         {
-            new Wildcard_Matching();
+            new UnitTest();
+
+
         }
     }
 }

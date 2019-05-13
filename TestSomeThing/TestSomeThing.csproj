@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Action Test.cs" />
     <Compile Include="AddTwoNumber.cs" />
+    <Compile Include="Boats to Save People.cs" />
     <Compile Include="Climbing Stairs.cs" />
     <Compile Include="Count and Say.cs" />
     <Compile Include="Delagete Test.cs" />
